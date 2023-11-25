@@ -2465,3 +2465,25 @@ h1.big-title span {
 .shadow-big{
 	text-shadow: 0 0 10px black;
 }
+
+.gradient-text_Happy {
+	font-size: 12;
+	font-weight: bold;
+	background-color: #12c2e9;
+	background: linear-gradient(to right, #0e92af, #c471ed, #f64f59);
+	/* Set the background size and repeat properties. */
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 500% auto;
+	animation: Shine 4s ease-in-out infinite alternate-reverse;
+}
+@keyframes happy {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
