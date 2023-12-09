@@ -30,30 +30,30 @@
 
  
 
-/** 1. Warning Yellow
+/** 1. Warning blue
 *******************************************************************/
 
 .colors_warning_yellow .c_cursor_inner,
 .colors_warning_yellow .m-menu-button:hover .burger .line
 {
-    background:#e3af00 !important;
+    background:#00aae3 !important;
 }
 
 .colors_warning_yellow .c_cursor_outer .bg,
 .colors_warning_yellow .c_cursor_outer .circle,
 .colors_warning_yellow .m-menu .m-menu-inner .main-items > li a.is-active span:after
 {
-    border-color: #e3af00 !important;
+    border-color: #00aae3 !important;
 }
 
 .colors_warning_yellow ::selection 
 {
-    color: #fdc60c !important;
+    color: #00aae3 !important;
 }
 
 .colors_warning_yellow ::-moz-selection 
 {
-    color: #fdc60c !important;
+    color: #00aae3 !important;
 }
 
 .colors_warning_yellow .m-menu .m-menu-inner .main-items  li:hover p,
@@ -64,7 +64,7 @@
 .colors_warning_yellow .m-menu .m-menu-inner .main-items > li a:hover span,
 .colors_warning_yellow .options-panel .close-button:hover
 {
-    color: #fdc60c !important;
+    color: #00aae3 !important;
 }
 
 
