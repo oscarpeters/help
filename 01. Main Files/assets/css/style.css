@@ -56,6 +56,14 @@ html
     }
 
 }
+@media(max-width: 410px) {
+
+    html
+    {
+        font-size: 5px;
+    }
+
+}
 
 body
 {
@@ -132,7 +140,7 @@ h6
 
 p
 {
-    font-size: 3.4rem;
+    font-size: 4rem;
     line-height: 1.4em;
     letter-spacing: -0.005em;
     font-weight: 300;
@@ -2275,6 +2283,12 @@ _:-ms-fullscreen, :root .section-container .section.y-center .container
         width: 100%;
     }
    
+}
+@media (max-width: 450px){
+    .h1
+    {
+        font-size: 8rem;
+    }
 }
 .words {
 	display: inline;
