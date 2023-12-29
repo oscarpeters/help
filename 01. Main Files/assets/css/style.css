@@ -2309,6 +2309,7 @@ _:-ms-fullscreen, :root .section-container .section.y-center .container
 	font-weight: 700;
 	-webkit-text-size-adjust: none;
 	text-shadow: 0 0 10px black;
+    text-indent: 15px;
 }
 
 .rotate span {
