@@ -2502,3 +2502,11 @@ h1.big-title span {
 		background-position: 100% 50%;
 	}
 }
+.button-text {
+    font-weight: 500;
+    transition: color 0.3s ease; 
+}
+
+.default-button:hover .button-text {
+    color: rgb(111, 212, 237); 
+}
