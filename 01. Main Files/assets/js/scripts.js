@@ -600,33 +600,77 @@ function menu_setup() {
 	// Scroll to section on nav item click
 	function setupLinks(scroller) {
 
-		let linkElements = gsap.utils.toArray('.m-menu .main-items a.scroll-to'),
-			linkTargets = linkElements.map(function (e) { return document.querySelector(e.getAttribute("href")) } ),
-			linkPositions = [],
-			calculatePositions = function calculatePositions() {
-				var offset = gsap.getProperty(scroller, "y");
-				linkTargets.forEach(function (e, i) {
-				  return linkPositions[i] = e.getBoundingClientRect().top - offset;
-				});
-			  };
-		
-			linkElements.forEach(function (element, i) {
-				element.addEventListener("click", function (e) {
-					e.preventDefault();
-					gsap.to(window, {
-						scrollTo: linkPositions[i],
-						ease: "power4",
-						duration: 2,
-						overwrite: true
-					});
-					if(menu_position != "opened") return;
-					if(config_scroll_animation_on_mobile == true) update_timeline("close");
-				});
+	let linkElements = gsap.utils.toArray('.m-menu .main-items a.scroll-to'),
+		linkTargets = linkElements.map(function (e) {
+			let target = document.querySelector(e.getAttribute("href"));
+			if (!target) {
+				console.warn(`Target not found for link: ${e.getAttribute("href")}`);
+			}
+			return target;
+		}),
+		linkPositions = [],
+		calculatePositions = function calculatePositions() {
+			var offset = gsap.getProperty(scroller, "y");
+			linkTargets.forEach(function (e, i) {
+				if (e) {
+					linkPositions[i] = e.getBoundingClientRect().top - offset;
+				}
 			});
-		
-		ScrollTrigger.addEventListener("refresh", calculatePositions);
+		};
+	
+	linkElements.forEach(function (element, i) {
+		element.addEventListener("click", function (e) {
+			e.preventDefault();
+			if (linkPositions[i] !== undefined) {
+				gsap.to(window, {
+					scrollTo: linkPositions[i],
+					ease: "power4",
+					duration: 2,
+					overwrite: true
+				});
+				if (menu_position != "opened") return;
+				if (config_scroll_animation_on_mobile == true) update_timeline("close");
+			} else {
+				console.warn(`No position found for link: ${element.getAttribute("href")}`);
+			}
+		});
+	});
+	
+	ScrollTrigger.addEventListener("refresh", calculatePositions);
 
-	} setupLinks(document.querySelector(".right-content .inner-content"));
+} 
+
+setupLinks(document.querySelector(".right-content .inner-content"));
+
+	// function setupLinks(scroller) {
+
+	// 	let linkElements = gsap.utils.toArray('.m-menu .main-items a.scroll-to'),
+	// 		linkTargets = linkElements.map(function (e) { return document.querySelector(e.getAttribute("href")) } ),
+	// 		linkPositions = [],
+	// 		calculatePositions = function calculatePositions() {
+	// 			var offset = gsap.getProperty(scroller, "y");
+	// 			linkTargets.forEach(function (e, i) {
+	// 			  return linkPositions[i] = e.getBoundingClientRect().top - offset;
+	// 			});
+	// 		  };
+		
+	// 		linkElements.forEach(function (element, i) {
+	// 			element.addEventListener("click", function (e) {
+	// 				e.preventDefault();
+	// 				gsap.to(window, {
+	// 					scrollTo: linkPositions[i],
+	// 					ease: "power4",
+	// 					duration: 2,
+	// 					overwrite: true
+	// 				});
+	// 				if(menu_position != "opened") return;
+	// 				if(config_scroll_animation_on_mobile == true) update_timeline("close");
+	// 			});
+	// 		});
+		
+	// 	ScrollTrigger.addEventListener("refresh", calculatePositions);
+
+	// } setupLinks(document.querySelector(".right-content .inner-content"));
 
 	var sections = Array.prototype.slice.call(document.querySelectorAll('.section'))
 	sections.forEach(function (section, index) {

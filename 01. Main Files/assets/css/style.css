@@ -2510,3 +2510,41 @@ h1.big-title span {
 .default-button:hover .button-text {
     color: rgb(111, 212, 237); 
 }
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #ffffff;
+  -webkit-animation: 1s ease 0.4s infinite cursor;
+          animation: 1s ease 0.4s infinite cursor;
+  /* background: #1ba4ca; */
+  padding: 0 5px;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    border-right: 0.08em solid #666;
+  }
+  35% {
+    border-right: 0.08em solid rgba(0, 0, 0, 0);
+  }
+  70% {
+    border-right: 0.08em solid #666;
+  }
+  100% {
+    border-right: 0.08em solid #666;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 0.08em solid #666;
+  }
+  35% {
+    border-right: 0.08em solid rgba(0, 0, 0, 0);
+  }
+  70% {
+    border-right: 0.08em solid #666;
+  }
+  100% {
+    border-right: 0.08em solid #666;
+  }
+}
