@@ -4,162 +4,136 @@
 
 <head>
 
-
     <!-- META -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-
     <!-- PAGE TITLE -->
     <title>De Meterkast Expert | Professioneel elektricien</title>
 
-
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="assets/images/person.png">
-
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/elements.css">
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <style>
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
 
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
 </head>
 
 <body>
 
-
     <!-- LOADING SCREEN -->
     <div class="loading-screen">
-
         <!-- INNER-->
         <div class="inner">
             <div class="text-box gradient-text">De Meterkast Expert</div>
             <div class="line-frame"><div class="line"></div></div>
         </div>
         <!-- /INNER-->
-
     </div>
     <!-- /LOADING SCREEN -->
 
-
     <!-- MENU BUTTON -->
     <div class="m-menu-button">
-
         <!-- BURGER -->
         <div class="burger">
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <!-- /BURGER -->
-
     </div>
     <!-- /MENU BUTTON -->
 
-
     <!-- MENU -->
     <div class="m-menu">
-
-
         <!-- MENU INNER -->
         <div class="m-menu-inner noselect">
+            <!-- MENU ITEMS -->
+            <div class="head m-b-2"><p class="small">Menu</p></div>
+            <ul class="main-items">
+                <li><a class="scroll-to" href="#intro"><span class="ti-location-pin"></span><p class="small">Home</p></a></li>
+                <li><a class="scroll-to" href="#resume"><span class="ti-align-left"></span><p class="small">Projecten</p></a></li>
+                <li><a class="scroll-to" href="#portfolio"><span class="ti-view-grid"></span><p class="small">Tarieven</p></a></li>
+                <li><a class="scroll-to" href="#contact"><span class="ti-comments"></span><p class="small">Contact</p></a></li>
+            </ul>
+            <!-- /MENU ITEMS -->
 
-
-                <!-- MENU ITEMS -->
-                <div class="head m-b-2"><p class="small">Menu</p></div>
-                <ul class="main-items">
-
-                    <li><a class="scroll-to" href="#intro"><span class="ti-location-pin"></span><p class="small">Home</p></a></li>
-                    <!-- <li><a class="scroll-to" href="#about"><span class="ti-user"></span><p class="small">About</p></a></li> -->
-                    <li><a class="scroll-to" href="#resume"><span class="ti-align-left"></span><p class="small">Projecten</p></a></li>
-                    <li><a class="scroll-to" href="#portfolio"><span class="ti-view-grid"></span><p class="small">Tarieven</p></a></li>
-                    <li><a class="scroll-to" href="#contact"><span class="ti-comments"></span><p class="small">Contact</p></a></li>
-                  
-
-                </ul>
-                <!-- /MENU ITEMS -->
-
-
-                <!-- SOCIAL ITEMS -->
-                <div class="head m-b-2 m-t-7"><p class="small">Social media</p></div>
-                <div class="social-items">
-
-                    <div class="item"><a href="https://facebook.com/demeterkastexpert"><span class="ti-facebook"></span></a></div>
-                    <div class="item"><a href="https://www.linkedin.com/in/jordy-nieman-0a56917b/"><span class="ti-linkedin"></span></a></div>
-                    <div class="item"><a href="mailto:info@demeterkastexpert.nl?subject=request via website"><span class="ti-email"> </span></a></div>
-                    <div class="item"><a href="tel:654258088"><span class="ti-tablet"> </span></a></div>
- 
-                </div>
-                <!-- /SOCIAL ITEMS -->
-
-
+            <!-- SOCIAL ITEMS -->
+            <div class="head m-b-2 m-t-7"><p class="small">Social media</p></div>
+            <div class="social-items">
+                <div class="item"><a href="https://facebook.com/demeterkastexpert"><span class="ti-facebook"></span></a></div>
+                <div class="item"><a href="https://www.linkedin.com/in/jordy-nieman-0a56917b/"><span class="ti-linkedin"></span></a></div>
+                <div class="item"><a href="mailto:info@demeterkastexpert.nl?subject=request via website"><span class="ti-email"> </span></a></div>
+                <div class="item"><a href="tel:654258088"><span class="ti-tablet"> </span></a></div>
+            </div>
+            <!-- /SOCIAL ITEMS -->
         </div>
         <!-- /MENU INNER -->
-
-
     </div>
     <!-- /MENU -->
-    
 
     <!-- MAIN -->
-    <div id="main">
-
-
+    <div class="main">
         <!-- LEFT CONTENT -->
         <div class="left-content noselect">
-
-
             <!-- INNER CONTENT -->
             <div class="inner-content">
-                
-
                 <!-- NAME -->
                 <div class="name">
                     <p class="small color-white"></p>
-                    <!-- <div class="seperator-line"></div> -->
                 </div>
                 <!-- /NAME -->
-
                 <div class="picture-box"><div class="picture"></div></div>
                 <div class="frame-1 frame"></div>
                 <div class="frame-2 frame"></div>
                 <div class="frame-3 frame"></div>
-
-
             </div>
             <!-- /INNER CONTENT -->
-
-
         </div>
         <!-- /LEFT CONTENT -->
 
-
         <!-- RIGHT CONTENT -->
         <div class="right-content">
-
-
             <!-- INNER CONTENT -->
             <div class="inner-content">
-
-
                 <!-- SECTION CONTAINER -->
                 <div class="section-container">
-                
-
                     <!-- SECTION ( INTRODUCTION ) -->
                     <div class="section height-100 y-center" style="padding-bottom:2rem" id="intro">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-
                             <p class="tag m-b-4"></p>
                             <h1 class="m-b-5 m-l-3 gradient-text_contact" style="font-family: Bebas Neue; text-align: center;">De Meterkast Expert</h1>
                             <h3 class="m-b-5 m-l-3" style="text-align: center;">
@@ -167,58 +141,30 @@
                                 <span id="txt-rotate" class="txt-rotate" data-period="900" 
                                 data-rotate='[ "renovatie.", "storingen.", "reparatie.", "onderhoud.", "advies." ]'></span>
                             </h3>
-
-
-                            <!-- <h3 class="m-b-5 m-l-3 words rotate big-title shadow-big" style="text-align:center"> -->
-                                <!-- <h2 class="words rotate"> -->
-                                    <!-- <span>Renovatie</span>
-                                    <span>Storingen</span>
-                                    <span>Reparatie</span>
-                                    <span>Onderhoud</span>
-                                    <span>Advies</span>
-                                    <span>Oplossingsgericht</span>
-                                    <br/>
-                                </h3> -->
-                            <!-- <div class="seperator-line"></div> -->
-
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( INTRODUCTION ) -->
 
-
                     <!-- SECTION ( ABOUT ) -->
                     <div class="section" style="padding-bottom:26rem" id="about">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-
                             <p class="tag m-b-3 scroll-animation"></p>
                             <h3 class="m-b-4 m-l-1 scroll-animation" style="font-family: Bebas Neue;">De Meterkast Expert</h3><br><h4 class="scroll-animation">De elektricien met het oog op de toekomst!</h4>
                             <div class="m-b-4 scroll-animation"></div>
                             <p class="scroll-animation">De Meterkast Expert
                                  richt zich op het installeren, onderhouden en service van alle elektrotechnische installaties die voorkomen in de woningbouw, utiliteit & horeca in de regio Noord Oost Nederland. Hierbij richten we ons op uw comfort door met u mee te denken en te ontlasten op elektrotechnische gebied. Dit doen wij Uiteraard zo energiezuinig en duurzaam mogelijk.
                                 </p>
-
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( ABOUT ) -->
 
-
                     <!-- SECTION ( ACHIEVEMENTS ) -->
                     <div class="section" style="padding-bottom:20rem">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-                            
-
                             <p class="tag m-b-3 scroll-animation">Intro</p>
                             <h3 class="m-b-4 m-l-1 scroll-animation">Meedenkend en innovatief  </h3>
                             <div class="m-b-4 scroll-animation"></div>
@@ -227,113 +173,77 @@
                                 Door je jaren heen hebben wij tal van storingen opgelost en bijna ontelbare meterkasten gemoderniseerd. 
                                 Daarnaast hebben wij ondertussen 10 grote projecten uitgevoerd, waar wij samen met u meedenken over de mogelijke problemen van de toekomst die we nu alvast voor u oplossen.</p>
 
-
                             <!-- CARD GRID -->
                             <div class="card-grid scroll-animation">
-
-
                                 <!-- LEFT SIDE -->
                                 <div class="left-side">
-
-
                                     <!-- ITEM -->
                                     <div class="item noselect" style="background-color: #181818;">
-
                                         <!-- ITEM CONTAINER -->
                                         <div class="item-container">
                                             <h2>200+</h2>
                                             <p>Meterkasten</p>
                                         </div>
                                         <!-- /ITEM CONTAINER -->
-                                        
                                     </div>
                                     <!-- /ITEM -->
 
-
                                     <!-- ITEM -->
-                                    <div class="item                                                                                    " style="background-color: #080808;">
-
+                                    <div class="item" style="background-color: #080808;">
                                         <!-- ITEM CONTAINER -->
                                         <div class="item-container">
                                             <h2>300+</h2>
                                             <p>Storingen<p>
                                         </div>
                                         <!-- /ITEM CONTAINER -->
-
                                     </div>
                                     <!-- /ITEM -->
-
-
                                 </div>
                                 <!-- /LEFT SIDE -->
 
-
                                 <!-- RIGHT SIDE -->
                                 <div class="right-side m-t-6">
-
-
                                     <!-- ITEM -->
                                     <div class="item" style="background-color: #111;">
-
                                         <!-- ITEM CONTAINER -->
                                         <div class="item-container">
                                             <h2>150</h2>
                                             <p>Projecten</p>
                                         </div>
                                         <!-- /ITEM CONTAINER -->
-
                                     </div>
                                     <!-- /ITEM -->
 
-                                    
                                     <!-- ITEM -->
                                     <div class="item" style="background-color: #030303;">
-
                                         <!-- ITEM CONTAINER -->
                                         <div class="item-container ">
                                             <h2 class="gradient-text_Happy">99%</h2>
-                                            <p>klanttevredenheid</p>
+                                            <p>klant tevredenheid</p>
                                         </div>
                                         <!-- /ITEM CONTAINER -->
-
                                     </div>
                                     <!-- /ITEM -->
-
-
                                 </div>
                                 <!-- /RIGHT SIDE -->
-
-
                             </div>
                             <!-- /CARD GRID -->
-
-
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( ACHIEVEMENTS ) -->
 
-
                     <!-- SECTION ( SERVICES ) -->
                     <div class="section" style="padding-bottom:20rem">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-
-
                             <p class="tag m-b-3 scroll-animation">Services</p>
                             <h3 class="m-b-4 m-l-1 scroll-animation">Wat kan <strong>De Meterkast Expert</strong> voor u doen.</h3>
                             <div class="seperator-line m-b-4 scroll-animation"></div>
                             <p class="m-b-4 scroll-animation">Wij werken vanuit drie verschillende categorieën.<br> hieronder kunt u vinden wat het beste bij u probleem past.</p>
 
-
                             <!-- ACCORDION -->
                             <ul class="accordion" data-active-index="false" data-slide-Speed="200">
-
-
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item scroll-animation">
                                     <div><h5>Storing</h5><div class="icon"></div></div>
@@ -355,222 +265,147 @@
                                         bijvoorbeeld bij nieuwbouw of renovatie. </p></div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
-                            
-
                             </ul>
                             <!-- /ACCORDION -->
-
-
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( SERVICES ) -->
 
-
                     <!-- SECTION ( RESUME ) -->
                     <div class="section" style="padding-bottom:20rem" id="resume">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-
-
                             <p class="tag m-b-3 scroll-animation">Projecten</p>
                             <h3 class="m-b-4 m-l-1 scroll-animation">Afgeronde projecten</h3>
                             <div class="seperator-line m-b-4 scroll-animation"></div>
                             <p class="m-b-6 scroll-animation">Hieronder vind u een paar van de door <strong>De Meterkast Expert</strong> afgeronde projecten.</p>
 
-
                             <!-- RESUME -->
                             <div class="resume">
-
-
                                 <!-- ITEM -->
                                 <div class="item m-b-6 scroll-animation">
-
-                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Iso Extra<span class="m-l-2 color-white">2020-2020</span></p>
+                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Iso Extra<span class="m-l-2 color-white">2020</span></p>
                                     <p class="color-white m-b-1">Custom trailer</p>
                                     <p> Het volledig bekabelen aansluiten en aftesten van een gespecialiseerd Pur-installatie trailer.</p>
-
                                 </div>
                                 <!-- /ITEM -->
 
                                 <!-- ITEM -->
                                 <div class="item m-b-6 scroll-animation">
-
-                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Tongriem kliniek<span class="m-l-2 color-white">2021-2021</span></p>
+                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Tongriem kliniek<span class="m-l-2 color-white">2021</span></p>
                                     <p class="color-white m-b-1">Renovatie</p>
                                     <p>Een volledig nieuwe installatie op de beganegrond inclusief een nieuwe meterkast en smartverlichting.</p>
-
                                 </div>
                                 <!-- /ITEM -->
 
                                 <!-- ITEM -->
                                 <div class="item m-b-6 scroll-animation">
-
-                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Klijnstra stijgerbouw<span class="m-l-2 color-white">2021-2021</span></p>
+                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Klijnstra stijgerbouw<span class="m-l-2 color-white">2021</span></p>
                                     <p class="color-white m-b-1">Nieuwbouw</p>
                                     <p>Volledig nieuwe installatie voor zowel buiten als binnen, compleet uitgerust met allernieuwste snufjes en beveiligingen. </p>
-
                                 </div>
                                 <!-- /ITEM -->
 
+                                <!-- ITEM -->
+                                <div class="item m-b-6 scroll-animation">
+                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Opdracht<span class="m-l-2 color-white">2023</span></p>
+                                    <p class="color-white m-b-1">Storing </p>
+                                    <p> Airco storing, condenswater wat zich wat niet wordt afgevoerd. </p>
+                                </div>
 
                                 <!-- ITEM -->
                                 <div class="item m-b-6 scroll-animation">
-
-                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Het hoekje<span class="m-l-2 color-white">2021-2021</span></p>
-                                    <p class="color-white m-b-1">Storing </p>
-                                    <p> Geen warm water meer! De elektrische boiler is stuk. Geen punt dan vervangen wij deze zo snel mogelijk of plaatsen een equivalent warmtepompboiler die ook direct besparend is voor het milieu en uw portemonnee.  </p>
-
+                                    <p class="color-white m-b-1-5 small" style="color: aqua;">Opdracht<span class="m-l-2 color-white">2024</span></p>
+                                    <p class="color-white m-b-1">Industrieel </p>
+                                    <p>  Plaatsen van 24 oplaadwandcontactdozen die aan een automatische kabelhaspel zijn aangesloten met een eigen onderverdeler. </p>
                                 </div>
-                                 <!-- /ITEM -->
-
+                                <!-- /ITEM -->
                             </div>
                             <!-- /RESUME -->
-
-
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( RESUME ) -->
 
-
                     <!-- SECTION ( SKILLS ) -->
                     <div class="section" style="padding-bottom:20rem">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-
-
                             <p class="tag m-b-3 scroll-animation">SKILLS</p>
                             <h3 class="m-b-4 m-l-1 scroll-animation">Skills die we in de loop der jaren hebben opgedaan.</h3>
                             <div class="seperator-line m-b-4 scroll-animation"></div>
 
-
                             <!-- SKILL BAR -->
                             <div class="skill-bar scroll-animation">
-
-
                                 <div class="head noselect"><h5>Installatie werkzaamheden</h5></div>
-
                                 <!-- BAR -->
                                 <div class="bar m-b-2">
                                     <div class="fill" style="width: 95%;"></div>
                                     <div class="number-tag noselect" style="left: 95%;"><p class="small" style="font-weight: 800; color: aquamarine;">95%</p></div>
                                 </div>
                                 <!-- /BAR -->
-
-
                             </div>
                             <!-- /SKILL BAR -->
-
 
                             <!-- SKILL BAR -->
                             <div class="skill-bar m-b-2 scroll-animation">
-
-
                                 <div class="head noselect"><h5>Beveiligingsinstallaties</h5></div>
-                                
                                 <!-- BAR -->
                                 <div class="bar">
-
                                     <div class="fill" style="width: 80%;"></div>
                                     <div class="number-tag noselect" style="left: 80%;"><p class="small" style="font-weight: 800; color: aquamarine;">80%</p></div>
-                                
                                 </div>
                                 <!-- /BAR -->
-
-
                             </div>
                             <!-- /SKILL BAR -->
-
 
                             <!-- SKILL BAR -->
                             <div class="skill-bar scroll-animation">
-
-
                                 <div class="head noselect"><h5>Smart systemen</h5></div>
-                                
                                 <!-- BAR -->
                                 <div class="bar">
-
                                     <div class="fill" style="width: 85%;"></div>
                                     <div class="number-tag noselect" style="left: 85%;"><p class="small" style="font-weight: 800; color: aquamarine;">85%</p></div>
-                                
                                 </div>
                                 <!-- /BAR -->
-
-
                             </div>
                             <!-- /SKILL BAR -->
-
-
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( SKILLS ) -->
 
-                    
-
                     <!-- SECTION ( PRICING ) -->
                     <div class="section" style="padding-bottom:20rem">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-
-
                             <p class="tag m-b-3 scroll-animation"></p>
                             <h3 class="m-b-4 m-l-1 scroll-animation">Prijzen<br></h3>
                             <div class="seperator-line m-b-4 scroll-animation"></div>
-                            <p class="m-b-4 scroll-animation">
+                            <p class="m-b-4 scroll-animation"></p>
 
                             <!-- PRICING ACCORDION -->
                             <ul class="accordion pricing-accordion" data-active-index="false" data-slide-Speed="200">
-
-
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item pricing-item scroll-animation" style="background-color: #0c4d4d; border-radius: 15px;">
-
-
                                     <!-- HEAD -->
                                     <div class="head ">
-
-
                                         <div class="icon"></div>
-
                                         <p class="small color-white m-b-0-5" style="font-size: 40px; font-weight: 600;">Project</p>
-
                                         <!-- PRICE -->
                                         <div class="price">
                                             <h2 class="m-l-1" style="font-weight: 600;">€55</h2>
                                             <p class="m-l-2" style="color: aliceblue;">/per uur</p>
                                         </div>
                                         <!-- /PRICE -->
-        
                                         <div class="seperator-line m-t-2"></div>
-
-
                                     </div>
                                     <!-- /HEAD -->
-
-
                                     <!-- CONTENT -->
                                     <div class="content">
-
-
                                         <!-- FEATURES -->
                                         <div class="features m-t-3 m-b-3">
-
-
                                             <!-- FEATURE ITEM -->
                                             <div class="feature-item">
                                                 <span class="ti-check" style="color: aqua;"></span>
@@ -598,70 +433,47 @@
                                                 <p style="color: aliceblue;">Telefonisch support</p>
                                             </div>
                                             <!-- /FEATURE ITEM -->
-                                            
-
                                         </div>
                                         <!-- /FEATURES -->
-
-
                                     </div>
                                     <!-- /CONTENT -->
-                                    
                                 </li>
                                 <!-- /ACCORDION ITEM -->
-
-
                             </ul>
                             <!-- /PRICING ACCORDION -->
+
                             <!-- PRICING ACCORDION -->
                             <ul class="accordion pricing-accordion" data-active-index="false" data-slide-Speed="200">
-
-
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item pricing-item scroll-animation" style="background-color: #104652; border-radius: 15px;">
-
-
                                     <!-- HEAD -->
                                     <div class="head ">
-
-
                                         <div class="icon"></div>
-
                                         <p class="color-white m-b-0-5" style="font-size: 40px; font-weight: 600;">Storing</p>
-
                                         <!-- PRICE -->
                                         <div class="price">
                                             <h2 class="m-l-1" style="font-weight: 600;">€65</h2>
                                             <p class="m-l-2" style="color: aliceblue;">/per uur</p>
                                         </div>
                                         <!-- /PRICE -->
-
                                         <div class="seperator-line m-t-2"></div>
-
-
                                     </div>
                                     <!-- /HEAD -->
-
-
                                     <!-- CONTENT -->
                                     <div class="content">
-
-
                                         <!-- FEATURES -->
                                         <div class="features m-t-3 m-b-3">
-
-
                                             <!-- FEATURE ITEM -->
                                             <div class="feature-item">
                                                 <span class="ti-check" style="color: aqua;"></span>
-                                                <p style="color: aliceblue;">Beschikbaar: 07:00 / 20:00</p>
+                                                <p style="color: aliceblue;">07:00 / 21:00</p>
                                             </div>
                                             <!-- /FEATURE ITEM -->
 
                                             <!-- FEATURE ITEM -->
                                             <div class="feature-item">
                                                 <span class="ti-check" style="color: aqua;"></span>
-                                                <p style="color: aliceblue;">Exclusief voorrijdkosten</p>
+                                                <p style="color: aliceblue;">Exclusief voorrijkosten</p>
                                             </div>
                                             <!-- /FEATURE ITEM -->
 
@@ -678,95 +490,52 @@
                                                 <p style="color: aliceblue;">Zelfde dag geholpen</p>
                                             </div>
                                             <!-- /FEATURE ITEM -->
-                                            
-
                                         </div>
                                         <!-- /FEATURES -->
-
-
                                     </div>
                                     <!-- /CONTENT -->
-                                    
                                 </li>
                                 <!-- /ACCORDION ITEM -->
-
-
                             </ul>
                             <!-- /PRICING ACCORDION -->
-
-                            <!-- PRICING ITEM -->
-                            <!-- <div class="pricing-item m-b-2 m-t-3 scroll-animation" style="background-color: #181818;">
-
-                                
-                                <p class="small color-white m-b-0-5">Storing</p> -->
-
-                                <!-- PRICE -->
-                                <!-- <div class="price">
-                                    <h2 class="m-l-1">€65</h2>
-                                    <p class="m-l-2">/per uur</p>
-                                </div> -->
-                                <!-- /PRICE -->
-<!-- 
-                                <div class="seperator-line m-t-2"></div>
-
-                                
-                            </div> -->
-                            <!-- /PRICING ITEM -->
-
-                            
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( PRICING ) -->
 
-
                     <!-- SECTION ( FAQ ) -->
-                    <div class="section" style="padding-bottom:20rem">
+                    <div class="section" style="padding-bottom:20rem"></div>
 
-
-                       
                     <!-- SECTION ( CONTACT ) -->
                     <div class="section" style="padding-bottom:20rem" id="contact">
-
-
                         <!-- CONTAINER -->
                         <div class="container">
-
-
                             <p class="tag m-b-3 scroll-animation">CONTACT</p>
                             <h3 class="m-b-4 m-l-1 scroll-animation">Kom in contact met de <strong>Meterkastexpert!</strong></h3>
                             <div class="seperator-line m-b-4 scroll-animation"></div>
                             <p class="m-b-6 scroll-animation">vull het contact formulier in.</p>
 
-
                             <!-- FORM --> 
                             <form id="contact-form" action="assets/contact.php" method="post" autocomplete="off">
-
-
                                 <input type="text" id="contact-form-name" class="scroll-animation" name="name" placeholder="* Naam">
                                 <input type="text" id="contact-form-email" class="scroll-animation m-t-5" name="email" placeholder="* E-mail">
                                 <input data-require-filling="false" type="text" id="contact-form-phone" class="scroll-animation m-t-5" name="phone" placeholder="Telefoonnummer">
                             
                                 <!--  HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THE COUNTRY FIELD -->
                                 <div class="hpc"><input type="text" id="contact-form-country" name="taxid" placeholder="* Tax ID"></div>
-                                <!--  / HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THE COUNTRY FIELD -->
+                                <!--  /HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THE COUNTRY FIELD -->
 
                                 <textarea id="contact-form-message autoresizing-textarea" class="scroll-animation m-t-5" name="message" placeholder="* Bericht" style="min-width: 200px; min-height: 30px; resize: both; max-width: 100%;"></textarea>
 
                                 <!-- BUTTON AREA --> 
                                 <div class="button-area m-t-5 scroll-animation">
-
                                     <!-- BUTTON -->
                                     <button type="submit" class="default-button">
                                         <span class="button-text" style="text">Verstuur</span>
                                         <span class="icon-button m-l-2"><span class="ti-arrow-right"></span></span>
                                     </button>
                                     <!-- /BUTTON -->
-
                                     <p class="small" style="font-style: italic; font-weight: bold;">* Moet worden ingevuld.<br></p>
-
                                 </div>
                                 <!-- /BUTTON AREA --> 
 
@@ -776,35 +545,25 @@
                                     <p>Bericht is verzonden!</p>
                                 </div>
                                 <!-- /SUCCESS BOX -->
-                                
-                            
                             </form>
                             <!-- /FORM--> 
-
-
                         </div>
                         <!-- /CONTAINER -->
-
-
                     </div>
                     <!-- /SECTION ( CONTACT ) -->
-
-
                 </div>
                 <!-- /SECTION CONTAINER -->
-                
-
             </div>
             <!-- /INNER CONTENT -->
-
-
         </div>
         <!-- /RIGHT CONTENT -->
-
-
     </div>
     <!-- MAIN -->
 
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://api.whatsapp.com/send?phone=31654258088&text=Beste%21%20Meterkast expert!%20" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <!-- JAVASCRIPT FILES -->
     <script src="assets/js/plugins.js"></script>
@@ -812,6 +571,7 @@
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/backgound.js"></script>
     <script src="assets/js/textrotate.js"></script>
+    <script src="assets/js/textbox-toast.js"></script>
 
 </body>
 
