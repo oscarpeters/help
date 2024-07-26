@@ -132,6 +132,9 @@ h5
     line-height: 1.18em;
 }
 
+.hidden-br {
+    display: none;
+}
 h6
 {
     font-size: 3rem;
